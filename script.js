@@ -1,1 +1,171 @@
+.featured-projects {
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.project {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 20px;
+}
+h2{
+  text-align: center;
+}
 
+.about-me-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.about-me-content p {
+  margin: 0;
+}
+
+.contact-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: Black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
+}
+
+.skills {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.skill h2 {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  background-color: #f9f9f9;
+  color: #555;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+  .featured-projects {
+    flex-direction: column;
+  }
+  .project {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .about-me-content {
+    flex-direction: column;
+  }
+  .profile-picture {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .skills ul {
+    flex-direction: column;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+h2, h3 {
+  font-family: 'Oswald', sans-serif;
+}
+p, li, a {
+  font-family: 'Open Snas', sans-serif;
+}
+:root {
+  --primary-color: #4A90E2;
+  --secondary-color: #63ffd3;
+  --text-color: #233d1f;
+  --background-light: #f2c46f;
+  --border-color: #a3a3a3;
+}
+body {
+  background-color: var(--background-light);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+.project {
+  border: 1px solid var(--border-color);
+  border-radius 10px;
+  padding: 10px;
+  margin-right: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.contact-button {
+  padding: 12px 25px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3 ease;
+}
+.contact-button:hover {
+  background-color: var(--secondary-color)
+}
+skills li {
+  background-color: white;
+  color: var(--text-color);
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  font-size: 0.9em; 
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.skills li:hover {
+  background-color: var(--secondary-color);
+  color: white;
+  border-color: var(--secondary-color);
+}
+.about-me, .skills, .featured-projects {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  max-width: 900;
+  margin-left: auto;
+  margin-right: autp;
+}
